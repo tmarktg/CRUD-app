@@ -27,24 +27,12 @@
         </tr>
       </thead>
       <tbody>
-        <!-- Loop through events data -->
-        <tr>
-          <td>Event Title</td>
-          <td>Event Date</td>
-          <td>Event Time</td>
-          <td>Event Venue</td>
-          <td>Event Category</td>
-          <td>
-            <a href="#">View</a>
-            <a href="#">Edit</a>
-            <a href="#">Delete</a>
-          </td>
-        </tr>
+        <!-- Events will be dynamically added here -->
       </tbody>
     </table>
 
     <!-- Create Event Form -->
-    <h2>Create Event</h2>
+    <h2 id="eventFormTitle">Create Event</h2>
     <form id="eventForm">
       <label for="title">Title:</label>
       <input
@@ -80,66 +68,18 @@
         name="category"
         required>
         <option value="">Select Category</option>
-        <option value="category1">Category 1</option>
-        <option value="category2">Category 2</option>
+        <option value="music">Music</option>
+        <option value="sports">Sports</option>
+        <option value="art">Art</option>
+        <option value="technology">Technology</option>
         <!-- Add more category options -->
       </select>
 
-      <button type="submit">Create</button>
-    </form>
-
-    <!-- Update Event Form -->
-    <h2>Update Event</h2>
-    <form>
-      <label for="update-title">Title:</label>
-      <input
-        type="text"
-        id="update-title"
-        name="update-title"
-        required />
-
-      <label for="update-date">Date:</label>
-      <input
-        type="date"
-        id="update-date"
-        name="update-date"
-        required />
-
-      <label for="update-time">Time:</label>
-      <input
-        type="time"
-        id="update-time"
-        name="update-time"
-        required />
-
-      <label for="update-venue">Venue:</label>
-      <input
-        type="text"
-        id="update-venue"
-        name="update-venue"
-        required />
-
-      <label for="update-category">Category:</label>
-      <select
-        id="update-category"
-        name="update-category"
-        required>
-        <option value="">Select Category</option>
-        <option value="category1">Category 1</option>
-        <option value="category2">Category 2</option>
-        <!-- Add more category options -->
-      </select>
-
-      <button type="submit">Update</button>
-      <button type="button">Cancel</button>
-    </form>
-
-    <!-- Delete Event Form -->
-    <h2>Delete Event</h2>
-    <form>
-      <p>Are you sure you want to delete this event?</p>
-      <button type="submit">Delete</button>
-      <button type="button">Cancel</button>
+      <button
+        class="create"
+        type="submit">
+        Create
+      </button>
     </form>
 
     <script src="script.js"></script>

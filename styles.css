@@ -7,16 +7,13 @@
 
 /* Body styles */
 body {
+  padding: 0 20px;
   font-family: Arial, sans-serif;
-  padding: 20px;
-}
-
-h1 {
-  margin-bottom: 20px;
 }
 
 h2 {
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 /* Table styles */
@@ -67,12 +64,32 @@ button {
   margin-right: 10px;
 }
 
-button[type='submit'] {
-  background-color: #4caf50;
-}
-
 button[type='button'] {
   background-color: #ccc;
+}
+
+/* Styles for the view, edit, and delete buttons */
+a {
+  text-align: center;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  color: #fff;
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+a:hover {
+  background-color: #51b0f2;
+}
+
+a:active {
+  background-color: #1d476b;
+}
+
+#eventList td {
+  text-align: center;
 }
 
 /* Responsive styles */
@@ -80,4 +97,70 @@ button[type='button'] {
   form {
     width: 100%;
   }
+}
+
+/* Additional styles for login page */
+
+body {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  width: 300px;
+  margin: 20px auto 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+button.create,
+button.register,
+button.login {
+  margin-top: 10px;
+}
+
+h2#eventFormTitle {
+  text-align: center;
+}
+
+p.registerLink,
+p.loginLink {
+  text-align: center;
 }
